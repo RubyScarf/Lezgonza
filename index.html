@@ -42,9 +42,32 @@
               background-color: #ffff;
               color: black;
             }
-  </style>
+            display: block;
+        	}
+        	.navbar li:hover ul {
+        		display: block;
+        	}
+        	/* Change the background color of dropdown links on hover */
+        	.navbar ul ul li a:hover {
+        		background-color: #555;
+        	}
+      </style>
     </head>
     <body>
+        <nav class="navbar">
+        	<ul>
+        		<li><a href="#">Home</a></li>
+        		<li>
+        			<a href="#">Dropdown</a>
+        			<ul>
+        				<li><a href="#">Option 1</a></li>
+        				<li><a href="#">Option 2</a></li>
+        				<li><a href="#">Option 3</a></li>
+        			</ul>
+        		</li>
+        		<li><a href="#">Contact</a></li>
+        	</ul>
+        </nav>
         <h1>¿Quien Sos?</h1>
         <h2>Susan G. Gonzalez Macias</h1>
         <a href=futbol.html>Test</a>
