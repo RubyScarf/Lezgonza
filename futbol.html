@@ -34,8 +34,65 @@
       background-color: #ffff;
       color: black;
     }
+    .navbar {
+  		background-color: #333;
+  		position: relative;
+  		z-index: 999;
+  	}
+  
+  	.navbar ul {
+  		list-style-type: none;
+  		margin: 0;
+  		padding: 0;
+      background: black;
+  	}
+  
+  	.navbar li {
+  		display: inline-block;
+  	}
+  
+  	.navbar li a {
+  		color: white;
+  		display: block;
+  		padding: 10px 20px;
+  		text-decoration: none;
+  	}
+  
+  	/* Style the dropdown menu */
+  	.navbar ul ul {
+  		position: absolute;
+  		top: 100%;
+  		display: none;
+  	}
+  
+  	.navbar ul ul li {
+  		display: block;
+  	}
+  
+  	.navbar li:hover ul {
+  		display: block;
+  	}
+  
+  	/* Change the background color of dropdown links on hover */
+  	.navbar ul ul li a:hover {
+  		background-color: #555;
+  	}
   </style>
   <body>
+    <nav class="navbar">
+        <ul>
+        		<li><a href="#">Home</a></li>
+        		<li>
+        			<a href="#">Dropdown</a>
+        			<ul>
+        				<li><a href="#">Option 1</a></li>
+        				<li><a href="#">Option 2</a></li>
+        				<li><a href="#">Option 3</a></li>
+        			</ul>
+        		</li>
+        		<li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
   <span style="background-color: #004aad> highlighted text.</span>
   <span style="background-image: url(https://i0.wp.com/www.learnically.com/wp-content/uploads/2023/05/html-strucher.jpg resize=768%2C432&ssl=1);  font-size: 20pt; ">Legonza</span>
   <span title="Name">Agency</span>
